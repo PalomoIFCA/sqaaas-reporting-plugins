@@ -25,11 +25,12 @@ repos:
   hooks:
     - id: flake8
       args: ['config=setup.cfg']
-- repo: https://github.com/PyCQA/docformatter
-  rev: v1.7.5
-  hooks:
-    - id: docformatter
-      args: [--in-place, --config, ./setup.cfg]
+## TEMPORARILY DISABLE: https://github.com/PyCQA/docformatter/pull/287
+# - repo: https://github.com/PyCQA/docformatter
+#   rev: v1.7.5
+#   hooks:
+#     - id: docformatter
+#       args: [--in-place, --config, ./setup.cfg]
 - repo: https://github.com/fsfe/reuse-tool
   rev: v1.0.0
   hooks:
